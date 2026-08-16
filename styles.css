@@ -1261,3 +1261,16 @@ footer {
         width: 100%;
     }
 }
+
+/* FIX DATE INPUT OVERFLOW */
+.booking-form,
+.form-group {
+    min-width: 0;
+}
+
+.form-group input[type="date"] {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
