@@ -1248,9 +1248,32 @@ footer {
     width: fit-content;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 950px) {
+
     .booking-form {
         grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .form-group {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .form-group input[type="date"] {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
     }
 
     .form-full {
@@ -1262,15 +1285,3 @@ footer {
     }
 }
 
-/* FIX DATE INPUT OVERFLOW */
-.booking-form,
-.form-group {
-    min-width: 0;
-}
-
-.form-group input[type="date"] {
-    width: 100%;
-    min-width: 0;
-    max-width: 100%;
-    box-sizing: border-box;
-}
