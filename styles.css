@@ -1284,16 +1284,17 @@ footer {
         width: 100%;
     }
 }
-/* FIX IPHONE / IPAD DATE INPUT WIDTH */
+/* FIX IPHONE / IPAD DATE INPUT */
 @media (max-width: 950px) {
 
-    input[type="date"] {
+    .form-group input[type="date"] {
         width: 100% !important;
         max-width: 100% !important;
         min-width: 0 !important;
 
-        display: block;
+        height: 66px !important;
 
+        display: block;
         box-sizing: border-box !important;
 
         -webkit-appearance: none;
