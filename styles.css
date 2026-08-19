@@ -1302,3 +1302,42 @@ footer {
     }
 
 }
+
+/* =========================================
+   KEEP WEBSITE STABLE ON PHONES / TABLETS
+========================================= */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    overscroll-behavior-x: none;
+}
+
+body {
+    position: relative;
+}
+
+.site-header,
+main,
+section,
+footer {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 100%;
+}
+
+@media (max-width: 950px) {
+
+    html,
+    body {
+        overflow-x: hidden !important;
+        overscroll-behavior-x: none;
+    }
+
+}
