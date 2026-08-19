@@ -1341,3 +1341,28 @@ footer {
     }
 
 }
+
+.date-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.date-wrapper input[type="date"] {
+    width: 100% !important;
+    height: 66px !important;
+    box-sizing: border-box;
+    background: white !important;
+    color: black !important;
+    padding: 15px !important;
+}
+
+.date-placeholder {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #737d7d !important;
+    font-size: 15px;
+    pointer-events: none;
+    z-index: 3;
+}
