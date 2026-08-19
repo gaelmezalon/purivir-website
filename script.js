@@ -104,3 +104,20 @@ textLinks.forEach((link) => {
         console.log("Purivir text button clicked.");
     });
 });
+const dateInput = document.getElementById("date");
+const datePlaceholder = document.querySelector(".date-placeholder");
+
+if (dateInput && datePlaceholder) {
+    const updateDatePlaceholder = () => {
+        if (dateInput.value) {
+            datePlaceholder.style.display = "none";
+        } else {
+            datePlaceholder.style.display = "block";
+        }
+    };
+
+    dateInput.addEventListener("change", updateDatePlaceholder);
+    dateInput.addEventListener("input", updateDatePlaceholder);
+
+    updateDatePlaceholder();
+}
